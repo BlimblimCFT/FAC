@@ -1,0 +1,11 @@
+.data
+    Hw: .asciiz "Ola Mundo\n"
+
+.text
+    main:
+        li $v0,4 
+        la $a0,Hw 
+        syscall
+
+        li $v0,10 
+        syscall
